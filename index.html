@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="static/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,19 +47,19 @@
         <div class="container">
             <div class="row g-3 align-items-center">
                 <div class="col-lg-3 mt-5 mb-5">
-                    <img class="img-fluid" src="img/profile.png" alt="" width="250">
+                    <img class="img-fluid" src="static/profile.png" alt="" width="250" border="2px">
                 </div>
                 <div class="col-lg-9">
-                    <h1 class="display-3 mb-3">Peter Kocsis</h1>
-                    <h4 class="display-32">PhD student in Photorealistic 3D reconstruction</h4>
-                    <h5 class="display-32">Supervisor: Prof. Dr. Matthias Niessner</h5>
-                    <h5 class="display-32">Visual Computing & Artificial Intelligence Lab, Technical University of Munich</h5>
+                    <h1 class="display-6 mb-3">Peter Kocsis</h1>
+                    <h4 class="display-32">PhD student in Inverse Rendering</h4>
+                    <h6 class="display-40">Supervisor: Prof. Dr. Matthias Niessner</h6>
+                    <h6 class="display-32">Visual Computing & Artificial Intelligence Lab, Technical University of Munich</h6>
                     
                     <a href="https://www.linkedin.com/in/peter-koppany-kocsis/" title="LinkedIN"><i class="bi bi-linkedin" style="font-size: 2em"></i></a>
                     <a href="https://twitter.com/Peter4AI" title="Twitter"><i class="bi bi-twitter" style="font-size: 2em; margin-left: 1em"></i></a>
                     <a href="https://github.com/Peter-Kocsis" title="GitHub"><i class="bi bi-github" style="font-size: 2em; margin-left: 1em"></i></a>
                     <a href="mailto:peter.kocsis@tum.de" title="Email"><i class="bi bi-envelope" style="font-size: 2em; margin-left: 1em"></i></a>
-                    <h6 class="display-16 mb-16">peter.kocsis@tum.de</h6>
+                    <h6 class="display-16 mb-16">peter.kocsis(at)tum.de</h6>
                 </div>
             </div>
         </div>
@@ -72,8 +72,8 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-3 mb-1">About</h1>
-                    I am currently doing my PhD in the Visual Computing & Artificial Intelligence Lab at the Technical University of Munich under the supervision of Prof. Dr. Matthias Niessner. I finished my bachelor's as Mechatronig engineer, then did my master's in Robotics, Cognition, Intelligence. Previously, I worked on Reinforcement Learning for control and planning. Later I dived into Active Learning for image classification. During my PhD, I am focusing on Photorealistic 3D Reconstruction, especially on lighting and material decomposition. 
+                    <h3 class="display-6 mb-1">About</h3>
+                    I am currently doing my PhD in the Visual Computing & Artificial Intelligence Lab at the Technical University of Munich under the supervision of Prof. Dr. Matthias Niessner. I finished my bachelor's as Mechatronics engineer, then did my master's in Robotics, Cognition, Intelligence. Previously, I worked on Reinforcement Learning for control and planning. Later I dived into Active Learning for image classification. During my PhD, I am focusing on Photorealistic 3D Reconstruction, specifically on lighting and material decomposition. 
                 </div>
             </div>
         </div>
@@ -86,14 +86,61 @@
         <div class="container">
             <div class="row g-14 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Publications</h1>
+                    <h3 class="display-6 mb-0">Publications</h3>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <a href="https://peter-kocsis.github.io/LightIt/">
+                            <img class="img-fluid rounded" src="static/2024_lightit.png" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>LightIt: Illumination Modeling and Control for Diffusion Models</h5>
+                                    <span>CVPR 2024</span>
+                                </div>
+                                <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>LightIt: Illumination Modeling and Control for Diffusion Models</h4>
+                    <h5>CVPR 2024</h5>
+                    <h6>Peter Kocsis, Julien Philip, Kalyan Sunkavalli, Matthias Niessner, Yannick Hold-Geoffroy</h6>
+                    Recent generative methods lack lighting control, which is crucial to numerous artistic aspects of image generation such as setting the overall mood or cinematic appearance. To overcome these limitations, we propose to condition the generation on shading and normal maps. We model the lighting with single bounce shading, which includes cast shadows. We first train a shading estimation module to generate a dataset of real-world images and shading pairs. Then, we train a control network using the estimated shading and normals as input. Our method demonstrates high-quality image generation and lighting control in numerous scenes.
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <a href="https://peter-kocsis.github.io/IntrinsicImageDiffusion/">
+                            <img class="img-fluid rounded" src="static/2024_intrinsic_image_diffusion.png" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Intrinsic Image Diffusion for Single-view Material Estimation</h5>
+                                    <span>CVPR 2024</span>
+                                </div>
+                                <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>Intrinsic Image Diffusion for Single-view Material Estimation</h4>
+                    <h5>CVPR 2024</h5>
+                    <h6>Peter Kocsis, Vincent Sitzmann, Matthias Niessner</h6>
+                    Intrinsic image decomposition is a highly ambigous task. 
+                    Deep-learning-based methods often fail due to the lack of large-scale real world data. 
+                    We propose to formulate the problem probabilistically and generate possible decompositions using a generative model. 
+                    This way, we can also utilize the strong image prior of diffusion models for the task of material estimation, which largely helps generalization. 
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative">
                         <a href="https://peter-kocsis.github.io/LowDataGeneralization/">
-                            <img class="img-fluid rounded" src="img/low_data_generalization.png" alt="">
+                            <img class="img-fluid rounded" src="static/2022_low_data_generalization.png" alt="">
                             <div class="team-text bg-white rounded-end p-4">
                                 <div>
                                     <h5>The Unreasonable Effectiveness of Fully-Connected Layers for Low-Data Regimes</h5>
@@ -108,6 +155,7 @@
                     <h4>The Unreasonable Effectiveness of Fully-Connected Layers for Low-Data Regimes</h4>
                     <h5>NeurIPS 2022</h5>
                     <h6>Peter Kocsis, Peter Súkeník, Guillem Brasó, Matthias Niessner, Laura Leal-Taixé, Ismail Elezi</h6>
+                    Convolutional neural networks were the standard for solving many computer vision tasks until recently, when Transformers of MLP-based architectures have started to show competitive performance. These architectures typically have a vast number of weights and need to be trained on massive datasets; hence, they are not suitable for their use in low-data regimes. In this work, we propose a simple yet effective framework to improve generalization from small amounts of data. We augment modern CNNs with fully-connected (FC) layers and show the massive impact this architectural change has in low-data regimes. 
                 </div>
             </div>
         </div>
@@ -120,17 +168,104 @@
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Projects</h1>
+                    <h3 class="display-6 mb-0">Projects</h3>
                 </div>
             </div>
-            Coming soon!
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <a>
+                            <img class="img-fluid rounded" src="static/2021_activelearning.png" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Active Learning with Transformers</h5>
+                                    <span>2021</span>
+                                </div>
+                                <i class="fa fa-2x text-primary"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>Active Learning with Transformers</h4>
+                    <h5>2021</h5>
+                    <h6>Technical University of Munich</h6>
+                    During my masters' thesis, I was working on using inter-sample message passing for active learning. Active learning requires uncertainty estimation of the unlabeled pool. Providing inter-sample information to the network helps to better find the out-of-domain samples. 
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <a>
+                            <img class="img-fluid rounded" src="static/2020_commonroad.png" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Reinforcement Learning for Motion Planning</h5>
+                                    <span>2020</span>
+                                </div>
+                                <i class="fa fa-2x text-primary"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>Reinforcement Learning for Motion Planning</h4>
+                    <h5>2020</h5>
+                    <h6>Technical University of Munich</h6>
+                    Commonroad is a generic framework for developing and testing motion planning algorithms for autonomous vehicles. Besides working on the platform as working student, I was also participating in researching reinforcement-learning-based motion planning with dense and sparse rewards. 
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <a>
+                            <img class="img-fluid rounded" src="static/2019_ballbalancingtable.png" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Neural Ball-balancing Table</h5>
+                                    <span>2019</span>
+                                </div>
+                                <i class="fa fa-2x text-primary"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>Neural Ball-balancing Table</h4>
+                    <h5>2019</h5>
+                    <h6>Budapest University of Technology and Economics</h6>
+                    During my bachelors' thesis, I have constructed a ball-balancing table and implemented various control algorithms. A virtual twin has been implemented in Unity and trained a neural-network-based controller, then transferred it to the real world device. 
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <a>
+                            <img class="img-fluid rounded" src="static/2017_sztaki.png" alt="">
+                            <div class="team-text bg-white rounded-end p-4">
+                                <div>
+                                    <h5>Monocular Localization</h5>
+                                    <span>2017</span>
+                                </div>
+                                <i class="fa fa-2x text-primary"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>Monocular Localization</h4>
+                    <h5>2017</h5>
+                    <h6>Machine Perception Research Laboratory</h6>
+                    The goal of the project was to reimplement and potentially improve the paper "Visual localization within LIDAR maps for automated urban driving" (Ryan W. W. and Ryan M. E., 2014). Given a pre-scanned map, we render synthetic views around an estimated pose. Then, we match the synthetic views to the camera feed. 
+                </div>
+            </div>
         </div>
     </div>
     <!-- Projects End -->
 
 
     <!-- CV Start -->
-    <div class="container-xxl py-6 pt-5" id="cv">
+    <!-- <div class="container-xxl py-6 pt-5" id="cv">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -139,26 +274,24 @@
             </div>
             Coming soon!
         </div>
-    </div>
+    </div> -->
     <!-- CV End -->
 
     <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
+    <div class="container-fluid bg-dark text-white py-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom text-secondary" href="#">Peter Kocsis</a>, All Right Reserved.
+
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
